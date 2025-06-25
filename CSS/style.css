@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#levelUpMenu, #transformationMenu {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 150px;
+    h2{
+        font-size: 2em;
+        margin: 0;
+        justify-self: center;
+        align-self: start;
+        text-align: center;
+        display: flex;
+        position: absolute;
+        font-family: "determination mono";
+        color: red;
+
+    }
+}
+
+
+
+canvas{
+    image-rendering: pixelated;
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255,0,0,0.5);
+}
+
+#tutorial{
+    display: flex;
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    h2{
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        position: absolute;
+        font-family: "determination mono";
+        color: red;
+
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        align-self: flex-end;
+    }
+    animation: forwards Tutorial 10s;
+}
+
+#WASD{
+     display: flex;
+        font-size: 1.2em;
+        padding: 20px;
+        height: 30%;
+        width: 20%;
+        background: rgba(255,0,0,0.8);
+        border: 2px solid red;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+        opacity: 50%;
+        font-family: "determination mono";
+        font-size: 20px;
+        align-self:flex-start;
+        justify-self: flex-end;
+}
+
+#shift{
+    display: flex;
+    font-size: 1.2em;
+    padding: 20px;
+    height: 30%;
+    width: 20%;
+    background: rgba(0,255,0,0.8);
+    border: 2px solid red;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    opacity: 50%;
+    font-family: "determination mono";
+    font-size: 20px;
+    align-self:flex-start;
+    justify-self: flex-end;
+
+}
+#arrows{
+    display: flex;
+    font-size: 1.2em;
+    padding: 20px;
+    height: 30%;
+    width: 20%;
+    background: rgba(0, 0, 255, 0.8);
+    border: 2px solid red;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    opacity: 50%;
+    font-family: "determination mono";
+    font-size: 20px;
+    align-self:flex-start;
+    justify-self: flex-end;
+}
+
+.upgrade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 600px;
+    height: 600px;
+    background: rgba(0,0,0,0.8);
+    border: 2px solid red;
+    border-radius: 20px;
+    input{
+        display: flex;
+        font-size: 1.2em;
+        padding: 20px;
+        height: 25%;
+        width: 100%;
+        background: rgba(0,0,0,0.8);
+        border: 2px solid red;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+        font-family: "determination mono";
+        font-size: 50px;
+        align-self:flex-start;
+        justify-self: flex-end;
+    }
+}
+
+.transformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 600px;
+    height: 500px;
+    gap: 20px;
+    background: rgba(0,0,0,0.8);
+    border: 2px solid red;
+    border-radius: 20px;
+    input{
+        display: flex;
+        font-size: 20px;
+        padding: 20px;
+        height: 25%;
+        width: 100%;
+        background: rgba(0,0,0,0.8);
+        border: 2px solid red;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+        font-family: "determination mono";
+        font-size: 50px;
+        align-self:flex-start;
+        justify-self: flex-end;
+       
+    }
+}
+
+#healthBonus,#attackSpeedBonus, #speedPath{
+    opacity: 0%;
+    animation: animacaoUpgrade 2s forwards;
+}
+#speedBonus, #attackSizeBonus, #damagePath{
+    opacity: 0%;
+    animation: animacaoUpgrade 3s forwards;
+}
+#damageBonus,#criticalChanceBonus,#criticalDamageBonus, #tank{
+    opacity: 0%;
+    animation: animacaoUpgrade 4s forwards;
+}
+
+@keyframes animacaoUpgrade {
+    0% { opacity: 0%; }
+    50% { opacity: 0%; margin-bottom: 1000px; }
+    100% { opacity: 100%; margin-bottom: 0px; }
+}
+@keyframes Tutorial {
+    0% { display: flex; }
+    80% { opacity: 100%; }
+    100% { display: none;opacity: 0; }
+    
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+canvas{
+    background-color: white;
+}
+#roomTransition {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,1);
+    color: white;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    h2{
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        position: absolute;
+        font-family: "determination mono";
+        color: blue;
+        animation: infinite oloko 5s;
+       
+
+    }
+}
+#grabSword {
+    display: flex;
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+     animation: forwards grabSword 6s;
+    h2{
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        position: absolute;
+        font-family: "determination mono";
+        color: red;
+        animation: infinite oloko 2s;
+       
+
+    }
+}
+
+@keyframes oloko {
+    0%,100% { transform: translateX(0px); transform: skew(0deg) }
+    10%, 30%, 50%, 70%,90% { transform: translateX(20px); transform: skew(-20deg); }
+    20%, 40%, 60%, 80% { transform: translateX(-20px); transform: skew(20deg); }
+}
+@keyframes grabSword {
+    0% { display: flex; }
+    80% { opacity: 100%; }
+    100% { display: none;opacity: 0; }
+}
+
+#grabShield {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+     animation: forwards grabSword 6s;
+    h2{
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        position: absolute;
+        font-family: "determination mono";
+        color: red;
+        animation: infinite oloko 2s;
+       
+
+    }
+}
+
+#shieldTutorial {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    h2{
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        position: absolute;
+        font-family: "determination mono";
+        color: rgb(81, 0, 255);
+       
+
+    }
+}

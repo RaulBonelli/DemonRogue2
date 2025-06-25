@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <audio id="bgMusic" src="/AUDIO/Chaoz Japan - Castle Crashers.mp3" loop></audio>
+    <audio id="attackSound" src="/AUDIO/"></audio>
+    <!-- Menu de Level Up -->
+    <div id="container">
+        <div id="grabSword">
+            <h2>RESTAURE SUA ALMA</h2>
+        </div>
+         <div id="grabShield">
+            <h2>PEGUE O SEU ESCUDO!</h2>
+        </div>
+        <div id="shieldTutorial">
+            <h2>Pressione espaço para rebater projéteis ou se tornar invulneravel</h2>
+        </div>
+        <div id="roomTransition">
+            <h2>Sala concluida!</h2>
+        </div>
+
+        <div id="levelUpMenu">
+            <h2>Level Up! Escolha um bônus:</h2>
+            <div class="upgrade" id="healthBonus">
+                <input type="button" id="btnHealth" value="Vida Maxima">
+            </div>
+            <div class="upgrade" id="speedBonus">
+                <input type="button" id="btnSpeed" value="Velocidade">
+            </div>
+            <div class="upgrade" id="damageBonus">
+                <input type="button" id="btnAttack" value="Dano">
+            </div>
+            <div class="upgrade" id="attackSpeedBonus">
+                <input type="button" id="btnAttackSpeed" value="Velocidade do Ataque">
+            </div>
+            <div class="upgrade" id="attackSizeBonus">
+                <input type="button" id="btnAttackSize" value="Tamanho do Ataque">
+            </div>
+            <div class="upgrade" id="criticalChanceBonus">
+                <input type="button" id="btnCriticalChance" value="Chance Crítica">
+            </div>
+            <div class="upgrade" id="criticalDamageBonus">
+                <input type="button" id="btnCriticalDamage" value="Dano Crítico">
+            </div>
+        </div>
+
+        <!-- Menu de Transformação -->
+        <div id="transformationMenu">
+            <h2>Transformação! Escolha um caminho:</h2>
+                <div class="transformation">
+                    <input type="button" id="SpeedPath" value="Fast draw">
+                </div>
+                <div class="transformation">
+                    <input type="button" id="DamagePath" value="DPS">
+                </div>
+                <div class="transformation">
+                    <input type="button" id="Tank" value="Tank">
+                </div>
+        </div>
+    </div>
+    <script src="./JS/Boss.js"></script>
+    <script src="./JS/Rooms.js"></script>
+    <script src="./JS/enemy.js"></script>
+    <script src="./JS/spritesheet2.js"></script>
+    <script src="./JS/MC.js"></script>
+     
+</body>
+</html>
