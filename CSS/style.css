@@ -84,6 +84,12 @@ canvas{
         align-self:flex-start;
         justify-self: flex-end;
 }
+img{
+    width: 599px;
+    height: 480px;
+    border-radius: 20px;
+    align-self: flex-end;
+}
 
 #shift{
     display: flex;
@@ -155,8 +161,8 @@ canvas{
     align-items: center;
     justify-content: flex-end;
     width: 600px;
-    height: 500px;
-    gap: 20px;
+    height: 600px;
+    gap: 0px;
     background: rgba(0,0,0,0.8);
     border: 2px solid red;
     border-radius: 20px;
@@ -320,5 +326,92 @@ canvas{
         color: rgb(81, 0, 255);
        
 
+    }
+}
+.transformation1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 600px;
+    height: 600px;
+    gap: 0px;
+    background: rgba(0,0,0,0.8);
+    border: 2px solid red;
+    border-radius: 20px;
+    input{
+        display: flex;
+        font-size: 20px;
+        padding: 20px;
+        height: 25%;
+        width: 100%;
+        background: rgba(0,0,0,0.8);
+        border: 2px solid red;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+        font-family: "determination mono";
+        font-size: 50px;
+        align-self:flex-start;
+        justify-self: flex-end;
+       
+    }
+}
+    .transformation2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 600px;
+    height: 600px;
+    gap: 0px;
+    background: rgba(0,0,0,0.8);
+    border: 2px solid red;
+    border-radius: 20px;
+    input{
+        display: flex;
+        font-size: 20px;
+        padding: 20px;
+        height: 25%;
+        width: 100%;
+        background: rgba(0,0,0,0.8);
+        border: 2px solid red;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+        font-family: "determination mono";
+        font-size: 50px;
+        align-self:flex-start;
+        justify-self: flex-end;
+       
+    }
+}
+    .transformation3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 600px;
+    height: 600px;
+    gap: 0px;
+    background: rgba(0,0,0,0.8);
+    border: 2px solid red;
+    border-radius: 20px;
+    input{
+        display: flex;
+        font-size: 20px;
+        padding: 20px;
+        height: 25%;
+        width: 100%;
+        background: rgba(0,0,0,0.8);
+        border: 2px solid red;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+        font-family: "determination mono";
+        font-size: 50px;
+        align-self:flex-start;
+        justify-self: flex-end;
+       
     }
 }

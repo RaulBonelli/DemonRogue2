@@ -3,14 +3,6 @@ let context = canvas.getContext("2d");
 canvas.width = 2150
 canvas.height = 1100
 context.imageSmoothingEnabled = false;
- window.addEventListener('DOMContentLoaded', () => {
-        const bgMusic = document.getElementById('bgMusic');
-        bgMusic.volume = 0.5; // Adjust volume as needed
-        bgMusic.play().catch(() => {
-            // Some browsers require user interaction to play audio
-        });
-    });
-
 
 const rooms = [
     new Room(
@@ -111,7 +103,7 @@ let attackCooldownDuration = 700; // Attack cooldown duration in milliseconds
 let attackDirection = "right"; // default direction
 let Pdead = false; // Flag to check if player is dead
 let maxHP = 200; // Maximum health points
-let xpToNextLevel = 25; // Experience needed to level up
+let xpToNextLevel = 100; // Experience needed to level up
 let activateShield = false; // Flag to check if shield is active
 let bounce = false; // Flag to check if player can bounce off enemies
 let gotSword = false; // Flag to check if player has a sword
